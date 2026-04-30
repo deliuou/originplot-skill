@@ -1,4 +1,4 @@
-# originplot Skill
+# originplot skill
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/xiaoou/originplot-skill?style=flat)](https://github.com/xiaoou/originplot-skill/stargazers)
