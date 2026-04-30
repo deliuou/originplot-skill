@@ -94,7 +94,11 @@ https://www.originlab.com/doc/python/Examples/Origin-Python-Data-Exchange
 https://pypi.org/project/originpro/
 ```
 
+**API constraint:** Do not guess unknown `originpro` APIs. If an API is unclear, check the official documentation or inspect the installed package source code before writing code; otherwise state the uncertainty and use a template-based workaround.
+
 ---
+
+
 
 ## 4. Top-Level Architecture
 
