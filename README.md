@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/xiaoou/originplot-skill?style=flat)](https://github.com/xiaoou/originplot-skill/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/xiaoou/originplot-skill)](https://github.com/xiaoou/originplot-skill/issues)
 
-`originplot` is a Codex skill for automating Origin/OriginPro figures from external Python. It treats OriginPro as a publication-quality rendering and template engine while keeping data preparation, computation, batching, and export orchestration in Python.
+`originplot` is a skill for automating Origin/OriginPro figures from external Python. It treats OriginPro as a publication-quality rendering and template engine while keeping data preparation, computation, batching, and export orchestration in Python.
 
 Designed for scientific and engineering workflows that need repeatable Origin workbooks, editable OPJU archives, and publication-ready exports.
 
@@ -37,7 +37,7 @@ Designed for scientific and engineering workflows that need repeatable Origin wo
 │       ├── panel_c_scatter_correlation.csv
 │       └── panel_d_heatmap_matrix.csv
 └── originplot-skill/
-    ├── SKILL.md                   # Main Codex skill instructions
+    ├── SKILL.md                   # Main skill instructions
     ├── FIGURESPEC_PROTOCOL.md     # Declarative figure protocol
     └── examples/
         └── any_figure_demo.yaml   # Minimal FigureSpec example
@@ -64,24 +64,20 @@ git clone https://github.com/xiaoou/originplot-skill.git
 cd originplot-skill
 ```
 
-Install the skill into Codex:
+Install the skill:
 
 ```bash
-mkdir -p "$HOME/.codex/skills/originplot"
-cp -R originplot-skill/. "$HOME/.codex/skills/originplot/"
+mkdir -p "$HOME/.skills/originplot"
+cp -R originplot-skill/. "$HOME/.skills/originplot/"
 ```
 
-Then invoke it by asking Codex for OriginPro automation help, or explicitly:
-
-```text
-Use $originplot to build a Nature-style 2x2 OriginPro figure from these CSV files.
-```
+Then invoke it when you need OriginPro automation help.
 
 ## Quick Start
 
 1. Prepare clean or raw data files under your plotting project, for example `data/processed/panel_a.csv`.
 2. Describe the figure as a `FigureSpec` YAML file, starting from [`originplot-skill/examples/any_figure_demo.yaml`](originplot-skill/examples/any_figure_demo.yaml).
-3. Ask Codex to use `$originplot` to generate the Windows Python automation script.
+3. Use `$originplot` to generate the Windows Python automation script.
 4. Run the generated script in Windows Python with Origin/OriginPro installed.
 5. Export figures and save the editable `.opju` project.
 
@@ -135,7 +131,7 @@ Use OPJU to preserve editability.
 
 ## Documentation
 
-- [`SKILL.md`](originplot-skill/SKILL.md): main Codex skill instructions.
+- [`SKILL.md`](originplot-skill/SKILL.md): main skill instructions.
 - [`FIGURESPEC_PROTOCOL.md`](originplot-skill/FIGURESPEC_PROTOCOL.md): full declarative figure protocol.
 - [`any_figure_demo.yaml`](originplot-skill/examples/any_figure_demo.yaml): minimal example spec.
 

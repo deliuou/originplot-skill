@@ -1,13 +1,13 @@
 [project]
 name = "originplot-skill"
 version = "0.1.0"
-description = "A Codex skill for automating Origin/OriginPro figures from external Python"
+description = "A skill for automating Origin/OriginPro figures from external Python"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
     {name = "Xiaoou", email = "xiaoou@example.com"}
 ]
-keywords = ["originpro", "origin", "plotting", "scientific", "codex", "skill"]
+keywords = ["originpro", "origin", "plotting", "scientific", "skill"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
