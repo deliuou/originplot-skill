@@ -69,11 +69,15 @@ Then invoke it when you need OriginPro automation help.
 
 ## Quick Start
 
+**Workflow rule: FigureSpec first → confirm with user → then plot.**
+
 1. Prepare clean or raw data files in CSV, DAT, TXT, or Excel format.
 2. Describe the figure as a `FigureSpec` YAML file, starting from [`originplot-skill/examples/any_figure_demo.yaml`](originplot-skill/examples/any_figure_demo.yaml).
-3. Use `$originplot` to generate the Windows Python automation script.
-4. Run the generated script in Windows Python with Origin/OriginPro installed.
+3. Present the generated FigureSpec to the user for review and confirmation.
+4. Only after the user approves the FigureSpec, proceed to generate the Python script and execute the plotting.
 5. Export figures and save the editable `.opju` project.
+
+> Never start plotting without explicit user confirmation of the FigureSpec.
 
 ## FigureSpec
 
