@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OriginPro generated files and local outputs
+*.opju
+*.opj
+output/
+exports/
+figures/
+logs/
+
+# Large or local data products
+data/raw/
+data/processed/
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Keep repository example specs and docs tracked.
+!originplot-skill/examples/*.yaml
+!FigureSpec.png
+!Main.png

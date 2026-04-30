@@ -1,0 +1,89 @@
+figure:
+  id: demo_any_figure
+runtime:
+  show_origin: true
+  new_project: true
+  save_project: true
+  project_path: output/opju/demo_any_figure.opju
+
+data:
+  - id: ds_line
+    source: data/processed/panel_a_line_trends.csv
+    format: csv
+    object: worksheet
+    roles:
+      x: time
+      y: response
+      group: method
+      err_low: lower
+      err_high: upper
+
+page:
+  id: page_main
+  layout: single
+  size_mm: [160, 120]
+  margins_mm: [10, 10, 8, 8]
+
+layers:
+  - id: panel_a
+    page: page_main
+    position_mode: grid
+    grid_cell: [0, 0]
+    panel_tag: "(a)"
+    data_ref: ds_line
+    x:
+      title: Time (a.u.)
+      scale: linear
+      limits: auto
+    y:
+      title: Response (a.u.)
+      scale: linear
+      limits: auto
+    frame:
+      top: true
+      right: true
+      left: true
+      bottom: true
+
+plots:
+  - id: plot_main
+    layer: panel_a
+    type: line
+    data_ref: ds_line
+    map:
+      x: time
+      y: response
+      group: method
+    uncertainty:
+      type: band
+      low: lower
+      high: upper
+    group_style:
+      mode: color
+      palette_keys: [blue_main, green_3, red_strong]
+
+annotations:
+  - id: legend_main
+    type: legend
+    layer: panel_a
+    location: upper_right
+    frame: false
+
+style:
+  theme: nature
+  template: line_basic.otpu
+
+export:
+  dir_figures: output/figures
+  dir_data: output/data
+  dir_opju: output/opju
+  png:
+    enabled: true
+    width_px: 2400
+  pdf:
+    enabled: true
+  save_clean_data: true
+  qa:
+    require_opju: true
+    require_vector: true
+    require_nonempty_outputs: true
