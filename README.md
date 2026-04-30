@@ -30,12 +30,6 @@ Designed for scientific and engineering workflows that need repeatable Origin wo
 ├── pyproject.toml
 ├── FigureSpec.png
 ├── Main.png
-├── data/                          # Sample data for FigureSpec demos
-│   └── processed/
-│       ├── panel_a_line_trends.csv
-│       ├── panel_b_grouped_bar_wide.csv
-│       ├── panel_c_scatter_correlation.csv
-│       └── panel_d_heatmap_matrix.csv
 └── originplot-skill/
     ├── SKILL.md                   # Main skill instructions
     ├── FIGURESPEC_PROTOCOL.md     # Declarative figure protocol
@@ -75,7 +69,7 @@ Then invoke it when you need OriginPro automation help.
 
 ## Quick Start
 
-1. Prepare clean or raw data files under your plotting project, for example `data/processed/panel_a.csv`.
+1. Prepare clean or raw data files in CSV, DAT, TXT, or Excel format.
 2. Describe the figure as a `FigureSpec` YAML file, starting from [`originplot-skill/examples/any_figure_demo.yaml`](originplot-skill/examples/any_figure_demo.yaml).
 3. Use `$originplot` to generate the Windows Python automation script.
 4. Run the generated script in Windows Python with Origin/OriginPro installed.

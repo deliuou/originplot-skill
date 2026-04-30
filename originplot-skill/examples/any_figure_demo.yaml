@@ -8,7 +8,7 @@ runtime:
 
 data:
   - id: ds_line
-    source: data/processed/panel_a_line_trends.csv
+    source: your_data.csv
     format: csv
     object: worksheet
     roles:
