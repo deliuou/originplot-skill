@@ -54,7 +54,7 @@ External OriginPro automation depends on Origin's local automation server and CO
 Clone the repository:
 
 ```bash
-git clone https://github.com/xiaoou/originplot-skill.git
+git clone https://github.com/deliuou/originplot-skill.git
 cd originplot-skill
 ```
 
