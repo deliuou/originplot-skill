@@ -1,8 +1,8 @@
 # originplot skill
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/xiaoou/originplot-skill?style=flat)](https://github.com/xiaoou/originplot-skill/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/xiaoou/originplot-skill)](https://github.com/xiaoou/originplot-skill/issues)
+[![GitHub stars](https://img.shields.io/github/stars/deliuou/originplot-skill?style=flat)](https://github.com/deliuou/originplot-skill/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/deliuou/originplot-skill)](https://github.com/deliuou/originplot-skill/issues)
 
 `originplot` is a skill for automating Origin/OriginPro figures from external Python. It treats OriginPro as a publication-quality rendering and template engine while keeping data preparation, computation, batching, and export orchestration in Python.
 
